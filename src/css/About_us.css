@@ -1,0 +1,322 @@
+/* Hemanth Kumar Yamanki - 8758198 */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  p {
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  :root {
+    --primary-color: #1e3c72; /* Dark Blue */
+    --secondary-color: #ff6600; /* Bright Orange */
+    --light-color: #ffffff;    /* White */
+    --dark-color: #222;        /* Dark Text */
+    --background-color: #f9f9f9;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* About Section */
+  .about-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-color);
+    padding: 80px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .about-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Content Section */
+  .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px 20px;
+    margin: 40px auto;
+    background-color: var(--light-color);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-section .image-container {
+    flex: 1 1 45%; 
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .content-section .image-container img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+  .content-section .text-container {
+    flex: 1 1 55%;
+    padding: 20px;
+  }
+  
+  .content-section .text-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+  }
+  
+  .content-section .text-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Services Section */
+  .services-section {
+    background-color: var(--light-color);
+    padding: 60px 20px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .services-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-box {
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-icon {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+  }
+  
+  .service-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+  }
+  
+  .service-box p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    background: var(--background-color);
+    padding: 60px 20px;
+    animation: fadeIn 1.6s ease-in-out;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+  }
+  
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .testimonial-card {
+    background-color: var(--light-color);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .customer-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .customer-feedback {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .customer-name {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Team Section */
+  .team-section {
+    background: linear-gradient(135deg, #f1f1f1, var(--background-color));
+    padding: 60px 20px;
+  }
+  
+  .team-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-member {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .team-icon {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+  }
+  
+  .team-member h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+  }
+  
+  .team-member p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Partners Section */
+  .partners-section {
+    background-color: var(--background-color);
+    padding: 60px 20px;
+  }
+  
+  .partners-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+  }
+  
+  .partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .partner-logo {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .partner-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .content-section {
+      flex-direction: column;
+    }
+  
+    .services-container,
+    .testimonials-container,
+    .team-container,
+    .partners-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-box,
+    .testimonial-card,
+    .team-member {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
