@@ -1,4 +1,4 @@
-/*Naishal Rajput - 8866330*/
+/* NaishalRajput - 8866330 */
 .career-section {
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -212,4 +212,62 @@
 
 .callback-form button:hover {
   background-color: #e69500;
+}
+
+@media (max-width: 768px) {
+  .career-section,
+  .job-section,
+  .callback-section {
+    padding: 20px 10px;
+  }
+
+  .career-content h1,
+  .job-section h1 {
+    font-size: 28px;
+  }
+
+  .career-content h2 {
+    font-size: 20px;
+  }
+
+  .career-content p,
+  .career-content li,
+  .dropdown-content p,
+  .dropdown-content li {
+    font-size: 14px;
+  }
+
+  .callback-section h1 {
+    font-size: 20px;
+  }
+
+  .callback-form input,
+  .callback-form textarea {
+    font-size: 12px;
+  }
+
+  .callback-form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-content h1,
+  .job-section h1 {
+    font-size: 24px;
+  }
+
+  .career-content h2 {
+    font-size: 18px;
+  }
+
+  .callback-section h1 {
+    font-size: 18px;
+  }
+
+  .callback-form button {
+    font-size: 12px;
+    padding: 6px;
+  }
 }
