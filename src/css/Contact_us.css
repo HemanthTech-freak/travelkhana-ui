@@ -1,0 +1,84 @@
+/* Aleena Thekla Mary - 8830952 */
+
+.contact-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.contact-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-sub-header {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.contact-info {
+    justify-content: center;
+    display: flex;
+}
+
+
+.contact-column:nth-child(1) {
+    padding-right: 30px;
+    border-right: 1px solid gray;
+}
+
+.contact-column:nth-child(2) {
+    padding-left: 30px;
+    border-left: 1px solid gray;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.phone-number {
+    color: #FF6600;
+    font-weight: bold;
+}
+
+.email {
+    color: #333;
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+/* Contact Header */
+.contact-header,
+.contact-sub-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px;
+    background-color: #923a0069;
+    margin: 0;
+    color: #f9f9f9;
+}
+
+.contact-header {
+    padding-bottom: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.contact-sub-header {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.contact-banner {
+    background: url("../../public/Assets/img/contact-us-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    margin: 20px 50px;
+    border-radius: 15px;
+}
