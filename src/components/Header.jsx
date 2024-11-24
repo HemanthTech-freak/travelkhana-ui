@@ -19,7 +19,7 @@ function Header() {
         <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <Link to="/" onClick={toggleMenu}>Home</Link>
           <Link to="/about" onClick={toggleMenu}>About Us</Link>
-          <Link to="/blog" onClick={toggleMenu}>Blog</Link>
+          <Link to="/career" onClick={toggleMenu}>Career</Link>
           <Link to="/contact-us" onClick={toggleMenu}>Contact Us</Link>
         </nav>
 
